@@ -34,8 +34,9 @@ export class SearchingComponent implements OnInit {
 
       this.suggestions = data
         .filter(e => e.toLowerCase().startsWith(lowerValue))
-        .map(e => e.length > MAX_SUGGESTION_SHOW_LENGTH ? e.substring(0, MAX_SUGGESTION_SHOW_LENGTH - 2) + "..." : e)
         .sort((x: string, y: string) => x.localeCompare(y))
+		    .slice(0,8)
+		    .map(e => e.length > MAX_SUGGESTION_SHOW_LENGTH ? e.substring(0, MAX_SUGGESTION_SHOW_LENGTH - 2) + "..." : e);
     });  
     console.log(this.suggestions);  
   }
