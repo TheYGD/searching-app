@@ -1,0 +1,48 @@
+
+* {
+    display: block;
+    margin: auto;
+}
+
+#search-bar {
+    margin-bottom: -3rem;
+}
+
+ button {
+    position: relative;
+    left: 27.6rem;
+    bottom: 4.15rem;
+    width: 5rem;
+    height: 3rem;
+    color: white; 
+    background-color: rgb(90, 166, 90);
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: rgb(118, 184, 118);
+}
+
+input[type="text"], li {
+    width: 60rem;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    border: 2px solid black;
+}
+
+li {
+    border: 1px solid black;
+    border-top: 0;
+    border-radius: 0;
+    margin: auto;
+}
+
+li:hover {
+    background-color: rgb(231, 246, 229);
+}
+
+ul {
+    padding: 0;
+}

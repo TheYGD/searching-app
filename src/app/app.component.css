@@ -1,0 +1,13 @@
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1.5rem; 
+    color: white; 
+    background-color: rgb(90, 166, 90);
+    display: block;
+    margin: 1rem auto;
+}
+
+button:hover {
+    background-color: rgb(118, 184, 118);
+}
